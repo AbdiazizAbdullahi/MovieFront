@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "../css/Signup.css";
 
 function Signup() {
@@ -11,6 +11,7 @@ function Signup() {
   });
 
   const [error, setError] = useState(null);
+  const navigate = useNavigate();
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -25,6 +26,7 @@ function Signup() {
         const data = await response.json();
         console.log(data);
         // Redirect to login page
+        navigate('/login')
       } else {
         const errorData = await response.json();
         setError(errorData.message);
