@@ -11,7 +11,7 @@ function Login(){
     const handleSubmit = async (event) => {
         event.preventDefault();
         try {
-            const response = await fetch("http://test-api-j081.onrender.com//login", {
+            const response = await fetch("https://test-api-j081.onrender.com//login", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

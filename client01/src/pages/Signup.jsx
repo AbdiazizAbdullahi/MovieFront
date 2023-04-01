@@ -16,7 +16,7 @@ function Signup() {
   const handleSubmit = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch("http://test-api-j081.onrender.com/create", {
+      const response = await fetch("https://test-api-j081.onrender.com/create", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
