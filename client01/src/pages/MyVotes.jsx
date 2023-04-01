@@ -20,7 +20,7 @@ function MyVotes() {
   useEffect(() => {
     async function fetchMovies() {
       try {
-        const response = await fetch('http://127.0.0.1:3000/show');
+        const response = await fetch('https://test-api-j081.onrender.com/show');
         const data = await response.json();
         setMovies(data.movies);
       } catch (error) {
