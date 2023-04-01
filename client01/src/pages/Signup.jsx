@@ -6,7 +6,7 @@ function Signup() {
   const [formData, setFormData] = useState({
     username: "",
     email: "",
-    yearborn: "",
+    year_born: "",
     password: "",
   });
 
@@ -69,8 +69,8 @@ function Signup() {
           <div className="form-field">
             <input
               type="number"
-              name="yearborn"
-              value={formData.yearborn}
+              name="year_born"
+              value={formData.year_born}
               onChange={handleChange}
               required
             />
