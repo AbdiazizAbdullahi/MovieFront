@@ -1,0 +1,162 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Homepage styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+form {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 1.2rem;
+}
+
+select {
+  font-size: 1.2rem;
+  margin-left: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+input[type='text'] {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-right: 10px;
+  width: 60%;
+}
+
+button[type='submit'] {
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background-color: #0077b6;
+  color: #fff;
+  cursor: pointer;
+}
+
+button[type='submit']:hover {
+  background-color: #023e8a;
+}
+
+a {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  color: #0077b6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navbar styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #2691d9;
+}
+
+.brand{
+  color: #EAF6FF;
+  text-decoration: none;
+}
+
+.menu{
+  color: #EAF6FF;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-middle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+Link {
+  color: #6c8aa0;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+Link:hover {
+  color: #EAF6FF;
+}
